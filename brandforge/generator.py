@@ -11,7 +11,7 @@ PLATFORMS = {
     "LinkedIn": {"max": 3000, "tags": (3, 5), "style": "professional, insight-led, short paragraphs"},
     "X": {"max": 280, "tags": (1, 2), "style": "punchy, one idea, under 280 characters including hashtags"},
 }
-MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+MODEL = os.getenv("GEMINI_MODEL", "gemini-3.8-flash")
 
 
 def full_text(post):

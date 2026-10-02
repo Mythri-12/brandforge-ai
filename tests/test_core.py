@@ -69,6 +69,10 @@ def test_gemini_path_supports_candidate_payloads():
     assert mode == "gemini" and posts[0]["hashtags"] == ["#a"]
 
 
+def test_default_model_uses_supported_gemini_name():
+    assert generator.MODEL == "gemini-3.8-flash"
+
+
 def test_scheduler_skips_weekends_and_uses_slots():
     sat = date(2026, 10, 3)
     d = scheduler.slot_for("LinkedIn", 0, sat)
